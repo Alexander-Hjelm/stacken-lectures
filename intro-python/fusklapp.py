@@ -87,7 +87,7 @@ c = 4 * 5 # c = 20
 d = 9 / 3 # d = 3
 
 # Det går att kombinera heltal, decimaltal eller blanda båda
-e = 1.1 + 9.91 # e = 10.01
+e = 1.1 + 9.91 # e = 11.01
 f = 9 * 10.1 # f = 90.9
 
 # Det går också att mellanlagra variabler för komplicerade uträkningar
