@@ -1,3 +1,9 @@
+/*
+	Rekomendera: https://www.onlinegdb.com/
+	Kom ihåg att ändra språk till Java längst upp i högra hörnet
+
+*/
+
 package fusklapp;
 
 import java.io.BufferedReader;
