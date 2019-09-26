@@ -67,7 +67,7 @@ public class fusklapp {
 		int[] values = {1, 2, 3, 4};								// values är en 4-tupel
 		double[] coolValues = {1.2, 5.7783, 999999.1, 1/10^2 };
 		char[] hej1 = {'h','e','j'};
-		String hej2 = "hej";  // Betyder det här att String egentligen är en char[] ???? -> Ja det gör det, String är en object/reference typ som wrappar en char[]
+		String hej2 = "hej";  // Betyder det här att String egentligen är en char[]???? -> Ja det gör det, String är en object/reference typ som wrappar en char[]
 		
 		// Prata om listors properties:
 		// .length
