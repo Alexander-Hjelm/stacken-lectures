@@ -7,8 +7,11 @@ Bygg ett program eller en funktion i python som tar ett positivt heltal n som in
 Fibonaccis talföljd defineras som följer:
 
 F(0) = 1
+
 F(1) = 1
+
 ...
+
 F(n) = F(n-1) + F(n-2)
 
 Dvs det n:te fibonaccitalet är summan av de två föregående
@@ -17,7 +20,7 @@ Dvs det n:te fibonaccitalet är summan av de två föregående
 
 Indata: 9
 
-Utdata: 1, 1, 2, 3, 5, 8, 13, 21, 34
+Utskrift: 1, 1, 2, 3, 5, 8, 13, 21, 34
 
 (Talen i utdata kan också skiljas av nya rader)
 
