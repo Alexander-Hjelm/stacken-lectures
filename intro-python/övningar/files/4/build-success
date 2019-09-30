@@ -1,0 +1,9 @@
+Building: TestProgram (Debug|x86_64)
+
+Building with parameters: -p -f
+Performing extra build tasks...
+
+---------------------- Done ----------------------
+
+[Build Status] succeeded.
+Build: 0 error, 0 warnings
