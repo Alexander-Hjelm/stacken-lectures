@@ -12,7 +12,7 @@ The Intro course in Python is held Wednesday 2/10.
 
 * Find the cheat-sheets [here](https://github.com/Alexander-Hjelm/stacken-lectures/tree/master/intro-python/fusklappar).
 
-* Find the challenges [here]([https://github.com/Alexander-Hjelm/stacken-lectures/tree/master/intro-python/%C3%B6vningar](https://github.com/Alexander-Hjelm/stacken-lectures/tree/master/intro-python/övningar)).
+* Find the challenges [here](https://github.com/Alexander-Hjelm/stacken-lectures/tree/master/intro-python/%C3%B6vningar).
 
 ## Java
 
