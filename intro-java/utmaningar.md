@@ -98,7 +98,7 @@ De programmeringsparadigmer som Java bygger på är: imperativ, deklarativ, funk
 >
 > * **Privata**: Speed, MaxSpeed
 >
-> Välj lämpliga namn och datastrukturer för alla egenskaper.
+> Välj lämpliga datatyper för alla egenskaper.
 >
 > #### Metoder
 >
