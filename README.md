@@ -18,6 +18,9 @@ The Intro course in Python is held Wednesday 2/10.
 
 The Intro course in Java is held Wednesday 9/10.
 
+* Find the cheat-sheet [here](https://github.com/Alexander-Hjelm/stacken-lectures/blob/master/intro-java/fusklapp.java)
+* Find the challenges [here](https://github.com/Alexander-Hjelm/stacken-lectures/blob/master/intro-java/utmaningar.md)
+
 ## Git
 
 The Intro course to Git is held Wednesday 16/10.
