@@ -381,7 +381,7 @@ public class fusklapp {
 /*
  * Fler tips för att utvecklas i Java: 
  * - Kolla på Java Ramverket Processing 3: https://processing.org/
- * 
+ * - OOP
  * 
  * 
  */
