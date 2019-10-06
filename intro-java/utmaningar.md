@@ -108,7 +108,7 @@ De programmeringsparadigmer som Java bygger på är: imperativ, deklarativ, funk
 >
 > ---
 >
-> Instansiera klassen Car två gånger med olika data. Gör en ***for*** loop för att gå bilen att komma upp i högre hastighet, då **Drive** metoden ska öka hastigheten varje gång den anropas ända tills den når **MaxSpeed**.
+> Instansiera klassen Car två gånger med olika data. Gör en ***for*** loop för att gå bilen att komma upp i högre hastighet, då **Drive** metoden ska öka hastigheten, **Speed**, varje gång den anropas ända tills den når **MaxSpeed**.
 
 
 
