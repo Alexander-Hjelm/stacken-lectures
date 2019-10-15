@@ -1,0 +1,92 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Git intro</title>
+    <style>
+      section {
+      border: solid 1px black;
+      height: 80vh;
+      margin: 5vh;
+      padding: 5vh 5vmax;
+      font-size: 4vmin;
+      background: 3% 95%/15vmin url(git-icon.png) no-repeat;
+      }
+      h1, h2, p {
+      text-align: center;
+      }
+      q {
+      font-style: italic;
+      }
+      pre em { color: #833; }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Git</h1>
+      <p>Datorföreningen Stacken</p>
+      <p>Rasmus Kaj &lt;kaj@kth.se&gt;</p>
+    </section>
+    <section>
+      <h2>git</h2>
+      <p>Git is a <em>Distributed Version Control System</em>.</p>
+      <p>What is that and why do you need one?</p>
+      <p>Git is not just github,<br/>
+      Github is one service provider among others.</p>
+    </section>
+    <section>
+      <h2>What is inside</h2>
+
+      <p>A <em>git repository</em> is a database that stores a
+      directed graph where each node is a version of the project,
+      containing the file sysem as it looks in that version.</p>
+
+      <p>Each node is identified by a hash.</p>
+      <p>There can be symbolic names (tags and branches) pointing to
+      some versions.</p>
+    </section>
+    <section>
+      <h2>Tree / repo / stage</h2>
+      <p>You have a directory containing one checked-out version of
+      your project.</p>
+      <p>You have a repository containing the graph of versions of
+      your project.</p>
+      <p>You have a staging area for your next commit.</p>
+    </section>
+    <section>
+      <h2>Some commands</h2>
+      <pre>git init <em>dirname</em>
+cd <em>dirname</em>
+git status
+git add <em>filename(s)</em>
+git commit -m <em>message</em>
+git checkout <em>version</em> <em>filename(s)</em>
+git checkout -b <em>branchname</em>
+</pre>
+    </section>
+    <section>
+      <h2>Workig with others</h2>
+      <p>Github, gitlab, ssh, ...</p>
+      <pre>git clone <em>repo-url</em>
+git remote add <em>alias</em> <em>another-repo-url</em>
+git fetch <em>alias</em>
+git push <em>alias</em>
+</pre>
+    </section>
+    <section>
+      <h2>Pull requests</h2>
+      <p><q>Please consider this change to your project</q></p>
+      <p>Can be done by commandline | email</p>
+      <p>Github has a supported workflow facilitating discussion.</p>
+    </section>
+    <section>
+      <h2>Continous integration</h2>
+      <p>A bot can check out each commit as it is published, and
+      perform automatic testing and even deploy code to production.</p>
+    </section>
+    <section>
+      <h2>Hooks</h2>
+      <p>You can cofigure git to do automatic tasks each time you
+      do something (e.g. run a code formatter before each
+      checkin).</p>
+    </section>
+  </body>
+</html>
