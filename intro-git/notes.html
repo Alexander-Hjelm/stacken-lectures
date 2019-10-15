@@ -1,14 +1,26 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Git intro</title>
-    <style>
+    <style type="text/css">
       section {
+      line-height: 1.4;
       border: solid 1px black;
       height: 80vh;
       margin: 5vh;
       padding: 5vh 5vmax;
       font-size: 4vmin;
       background: 3% 95%/15vmin url(git-icon.png) no-repeat;
+      counter-increment: slide;
+      position: relative;
+      }
+      section:after {
+      content: "Slide " counter(slide) "\A Datorföreningen Stacken";
+      position: absolute;
+      right: 3%;
+      bottom: 3%;
+      font-size: 60%;
+      white-space: pre;
+      text-align: right;
       }
       h1, h2, p {
       text-align: center;
