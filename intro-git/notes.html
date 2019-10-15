@@ -18,30 +18,42 @@
       position: relative;
       }
       section:after {
+      bottom: 3%;
+      color: #f05033;
       content: "Slide " counter(slide) "\A Datorföreningen Stacken";
+      font-size: 60%;
       position: absolute;
       right: 3%;
-      bottom: 3%;
-      font-size: 60%;
-      white-space: pre;
       text-align: right;
+      white-space: pre;
       }
       h1, h2, p {
       text-align: center;
+      }
+      h1 {
+      border-radius: 1ex;
+      box-shadow: 0 .4em .3em -.2em #f05033;
+      font-size: 2em;
+      margin: 1em auto;
+      padding: 0 1ex;
+      width: -moz-fit-content;
       }
       q {
       font-style: italic;
       }
       pre em { color: #833; }
-      ul {
+      ul, pre {
       width: -moz-fit-content;
       margin: 1em auto;
       }
+      p.fin { font-size: 4em; }
+      p.fin:before { content: '🙡 ' }
+      p.fin:after { content: ' 🙢' }
     </style>
   </head>
   <body>
     <section tabindex="1">
-      <h1>Git</h1>
+      <h1>Git intro</h1>
       <p>Datorföreningen Stacken</p>
       <p>Rasmus Kaj &lt;kaj@kth.se&gt;</p>
     </section>
@@ -109,13 +121,22 @@ git push <em>alias</em>
     <section tabindex="1">
       <h2>Continous integration</h2>
       <p>A bot can check out each commit as it is published, and
-      perform automatic testing and even deploy code to production.</p>
+      perform automatic testing and even deploy code to
+      production.</p>
+      <p>travis-ci.org, circleci.com, appveyour.com, jenkins.ci, &#x2026;</p>
     </section>
     <section tabindex="1">
       <h2>Hooks</h2>
       <p>You can cofigure git to do automatic tasks each time you
       do something (e.g. run a code formatter before each
-      checkin).</p>
+      commit).</p>
+    </section>
+
+    <section tabindex="1">
+      <h2><em>Questions?</em></h2>
+      <pre>git help tutorial</pre>
+      <p><a href="https://www.stacken.kth.se">stacken.kth.se</a></p>
+      <p class="fin">&#x2234;</p>
     </section>
   </body>
 </html>
