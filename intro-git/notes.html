@@ -1,6 +1,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Git intro</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <style type="text/css">
       html, body {
       margin: 0;
@@ -93,13 +95,28 @@
       <p>You have a staging area for your next commit.</p>
     </section>
     <section tabindex="1">
-      <h2>Some commands</h2>
-      <pre>git init <em>dirname</em>
+      <h2>Setting up</h2>
+      <pre>git config --global user.name <em>"Your Name"</em>
+git config --global user.email <em>you@kth.se</em>
+
+git init <em>dirname</em>
 cd <em>dirname</em>
-git status
+</pre>
+    </section>
+    <section tabindex="1">
+      <h2>Adding changes</h2>
+<pre>git status
 git add <em>filename(s)</em>
+git diff <em>filename(s)</em>
 git commit -m <em>message</em>
+</pre>
+    </section>
+    <section tabindex="1">
+      <h2>Inspecting changes</h2>
+<pre>git log
+git checkout <em>version</em>
 git checkout <em>version</em> <em>filename(s)</em>
+git diff <em>version</em> <em>filename(s)</em>
 git checkout -b <em>branchname</em>
 </pre>
     </section>
