@@ -1,0 +1,160 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Git intro</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style type="text/css">
+      html, body {
+      margin: 0;
+      padding: 0;
+      }
+      section {
+      line-height: 1.4;
+      border-bottom: solid 1px black;
+      height: 90vh;
+      padding: 5vh 5vmax;
+      font-family: Mali, Kalam, Caveat, Charmonman, Charm, Amita, Merienda;
+      font-size: 4vmin;
+      font-size-adjust: 0.55;
+      background: 3% 95%/15vmin url(git-icon.svg) no-repeat;
+      counter-increment: slide;
+      position: relative;
+      }
+      section:after {
+      bottom: 3%;
+      color: #f05033;
+      content: "git intro, slide " counter(slide) "\A Datorföreningen Stacken";
+      font-size: 60%;
+      position: absolute;
+      right: 3%;
+      text-align: right;
+      white-space: pre;
+      }
+      h1, h2, p {
+      text-align: center;
+      }
+      h1 {
+      border-radius: 1ex;
+      box-shadow: 0 .4em .3em -.2em #f05033;
+      font-size: 2em;
+      margin: 1em auto;
+      padding: 0 1ex;
+      width: -moz-fit-content;
+      }
+      q {
+      font-style: italic;
+      }
+      pre em { color: #833; }
+      ul, pre {
+      width: -moz-fit-content;
+      margin: 1em auto;
+      }
+      p.fin { font-size: 4em; }
+      p.fin:before { content: '🙡 ' }
+      p.fin:after { content: ' 🙢' }
+    </style>
+  </head>
+  <body>
+    <section tabindex="1">
+      <h1>Git intro</h1>
+      <p>Datorföreningen Stacken</p>
+      <p>Rasmus Kaj &lt;kaj@kth.se&gt;</p>
+    </section>
+    <section tabindex="1">
+      <h2>git</h2>
+      <p>Git is a <em>Distributed Version Control System</em>.</p>
+      <p>What is that and why do you need one?</p>
+      <p>Git is not just github,<br/>
+      Github is one service provider among others.</p>
+    </section>
+    <section tabindex="1">
+      <h2>What is inside</h2>
+
+      <p>A <em>git repository</em> is a database that stores a
+      directed graph where each node is a version of the project,
+      containing the file system as it looks in that version.</p>
+
+      <p>Each node is identified by a hash.</p>
+      <p>There can be symbolic names (tags and branches) pointing to
+      some versions.</p>
+    </section>
+    <section tabindex="1">
+      <h2>What is a commit</h2>
+      <ul>
+	<li>A snapshot of the file tree</li>
+	<li>A commit message</li>
+	<li>A previous commit (or two for a merge)</li>
+	<li>Identified by a hash</li>
+      </ul>
+    </section>
+    <section tabindex="1">
+      <h2>Tree / repo / stage</h2>
+      <p>You have a directory containing one checked-out version of
+      your project.</p>
+      <p>You have a repository containing the graph of versions of
+      your project.</p>
+      <p>You have a staging area for your next commit.</p>
+    </section>
+    <section tabindex="1">
+      <h2>Setting up</h2>
+      <pre>git config --global user.name <em>"Your Name"</em>
+git config --global user.email <em>you@kth.se</em>
+
+git init <em>dirname</em>
+cd <em>dirname</em>
+</pre>
+    </section>
+    <section tabindex="1">
+      <h2>Adding changes</h2>
+<pre>git status
+git add <em>filename(s)</em>
+git diff <em>filename(s)</em>
+git commit -m <em>message</em>
+</pre>
+    </section>
+    <section tabindex="1">
+      <h2>Inspecting changes</h2>
+<pre>git log
+git checkout <em>version</em>
+git checkout <em>version</em> <em>filename(s)</em>
+git diff <em>version</em> <em>filename(s)</em>
+git checkout -b <em>branchname</em>
+</pre>
+    </section>
+    <section tabindex="1">
+      <h2>Workig with others</h2>
+      <p>Github, gitlab, ssh, ...</p>
+      <pre>git clone <em>repo-url</em>
+git remote add <em>alias</em> <em>another-repo-url</em>
+git fetch <em>alias</em>
+git push <em>alias</em>
+</pre>
+    </section>
+    <section tabindex="1">
+      <h2>Pull requests</h2>
+      <p><q>Please consider this change to your project</q></p>
+      <p>Can be done by commandline | email</p>
+      <p>Github has a supported workflow facilitating discussion.</p>
+    </section>
+    <section tabindex="1">
+      <h2>Continous integration</h2>
+      <p>A bot can check out each commit as it is published, and
+      perform automatic testing and even deploy code to
+      production.</p>
+      <p>travis-ci.org, circleci.com, appveyour.com, jenkins.ci, &#x2026;</p>
+    </section>
+    <section tabindex="1">
+      <h2>Hooks</h2>
+      <p>You can cofigure git to do automatic tasks each time you
+      do something (e.g. run a code formatter before each
+      commit).</p>
+    </section>
+
+    <section tabindex="1">
+      <h2><em>Questions?</em></h2>
+      <pre>git help tutorial</pre>
+      <p><a href="https://www.stacken.kth.se">stacken.kth.se</a></p>
+      <p class="fin">&#x2234;</p>
+    </section>
+  </body>
+</html>
